@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DependencyGraph</name>
+    </assembly>
+    <members>
+        <member name="T:Dependencies.DependencyGraph">
+             <summary>
+             A DependencyGraph can be modeled as a set of dependencies, where a dependency is an ordered 
+             pair of strings.  Two dependencies (s1,t1) and (s2,t2) are considered equal if and only if .
+             s1 equals s2 and t1 equals t2.
+             
+             Given a DependencyGraph DG:
+             
+                (1) If s is a string, the set of all strings t such that the dependency (s,t) is in DG 
+                is called the dependents of s, which we will denote as dependents(s).
+             
+                (t are the dependents, the second set are known as the dependents)
+                 notation = dependents(s) returns t
+                    
+                (2) If t is a string, the set of all strings s such that the dependency (s,t) is in DG 
+                is called the dependees of t, which we will denote as dependees(t).
+             
+                (s is the dependees, the first set is known as the dependees)
+                notation = dependees(t) will return s?
+                
+             The notations dependents(s) and dependees(s) are used in the specification of the methods of this class.
+            
+             For example, suppose DG = {("a", "b"), ("a", "c"), ("b", "d"), ("d", "d")}
+                 dependents("a") = {"b", "c"}
+                 dependents("b") = {"d"}
+                 dependents("c") = {}
+                 dependents("d") = {"d"}
+                 dependees("a") = {}
+                 dependees("b") = {"a"}
+                 dependees("c") = {"a"}
+                 dependees("d") = {"b", "d"}
+                 
+             All of the methods below require their string parameters to be non-null.  This means that 
+             the behavior of the method is undefined when a string parameter is null.  
+            
+             IMPORTANT IMPLEMENTATION NOTE
+             
+             The simplest way to describe a DependencyGraph and its methods is as a set of dependencies, 
+             as discussed above.
+             
+             However, physically representing a DependencyGraph as, say, a set of ordered pairs will not
+             yield an acceptably efficient representation.  DO NOT USE SUCH A REPRESENTATION.
+             
+             You'll need to be more clever than that.  Design a representation that is both easy to work
+             with as well acceptably efficient according to the guidelines in the PS3 writeup. Some of
+             the test cases with which you will be graded will create massive DependencyGraphs.  If you
+             build an inefficient DependencyGraph this week, you will be regretting it for the next month.
+             </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.#ctor">
+            <summary>
+            Creates a DependencyGraph containing no dependencies.
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.#ctor(Dependencies.DependencyGraph)">
+            <summary>
+            Creates a copy of a Dependency graph
+            </summary>
+            <param name="graph"></param>
+        </member>
+        <member name="P:Dependencies.DependencyGraph.Size">
+            <summary>
+            The number of dependencies in the DependencyGraph.
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.HasDependents(System.String)">
+            <summary>
+            Reports whether dependents(s) is non-empty.
+            Throws a null exception if the parameters are null
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.HasDependees(System.String)">
+            <summary>
+            Reports whether dependees(s) is non-empty.
+            Throws a null exception if the parameters are null
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.GetDependents(System.String)">
+            <summary>
+            Enumerates dependents(s).
+            Throws a null exception if the parameters are null
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.GetDependees(System.String)">
+            <summary>
+            Enumerates dependees(s).
+            Throws a null exception if the parameter is null
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.AddDependency(System.String,System.String)">
+            <summary>
+            Adds the dependency (s,t) to this DependencyGraph.
+            This has no effect if (s,t) already belongs to this DependencyGraph.
+            Throws a null exception if the parameters are null
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.RemoveDependency(System.String,System.String)">
+            <summary>
+            Removes the dependency (s,t) from this DependencyGraph.
+            Does nothing if (s,t) doesn't belong to this DependencyGraph.
+            throws a null exception if the parameters are null.
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.ReplaceDependents(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Removes all existing dependencies of the form (s,r).  Then, for each
+            t in newDependents, adds the dependency (s,t).
+            Throws a null exception if the parameters are null
+            </summary>
+        </member>
+        <member name="M:Dependencies.DependencyGraph.ReplaceDependees(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Removes all existing dependencies of the form (r,t).  Then, for each 
+            s in newDependees, adds the dependency (s,t).
+            Throws a null exception if the parameters are null
+            </summary>
+        </member>
+    </members>
+</doc>

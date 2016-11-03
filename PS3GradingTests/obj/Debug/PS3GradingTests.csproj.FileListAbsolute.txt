@@ -1,0 +1,10 @@
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\bin\Debug\PS3GradingTests.dll
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\bin\Debug\PS3GradingTests.pdb
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\bin\Debug\DependencyGraph.dll
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\bin\Debug\DependencyGraph.pdb
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\bin\Debug\DependencyGraph.xml
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\obj\Debug\PS3GradingTests.csprojResolveAssemblyReference.cache
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\obj\Debug\PS3GradingTests.dll
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\PS3GradingTests\obj\Debug\PS3GradingTests.pdb

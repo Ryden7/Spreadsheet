@@ -1,0 +1,11 @@
+﻿Rizwan Mohammed
+u0746346
+
+There were a quite a few test cases I was failing, this was due to 3 small errors:
+
+Cell.getType() == Typeof(Formula) was causing issues with saving content as a Formula, it needed to be Cell.content is Formula to be read correctly
+
+// result += lookup(item) should have been result = f.Evaluate(lookup), this was just over looked on my part 
+
+And finally the LongTests, I was not able to pass. This is probably due to my slow Formula class... Something that i can't really fix
+without redoing that portion of code.

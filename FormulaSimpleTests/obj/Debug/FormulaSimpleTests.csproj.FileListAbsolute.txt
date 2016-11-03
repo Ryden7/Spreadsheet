@@ -1,0 +1,9 @@
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\bin\Debug\FormulaSimpleTests.dll
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\bin\Debug\FormulaSimpleTests.pdb
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\bin\Debug\Formula.dll
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\bin\Debug\Formula.pdb
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\obj\Debug\FormulaSimpleTests.csprojResolveAssemblyReference.cache
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\obj\Debug\FormulaSimpleTests.dll
+C:\Users\Rizwan_Laptop\Source\Repos\Spring2016\Spreadsheet\FormulaSimpleTests\obj\Debug\FormulaSimpleTests.pdb
